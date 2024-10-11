@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+<header class="head">
+  <a href = "{% url 'home' %}">Home</a><span class="hati"> |</span> 
+  <a href = "{% url 'about' %}">About Me</a> <span class="hati"> |</span> 
+  <a href = "{% url 'portfolio' %}">Portfolio</a>
+</header>
+
+  {% block content %}
+
+  {% endblock content %}
+
+  <script src="{% static 'js/base.js' %}"></script>
+</body>
+</html>

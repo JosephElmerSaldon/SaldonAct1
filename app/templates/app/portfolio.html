@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<h1>--- My Portfolio ---</h1>
+<h3>-Fasion Design's</h3>
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="{% static 'images/Gray.png' %}" >
+    </div>
+    <div class="grid-item">
+        <img src="{% static 'images/blue2.png' %}" alt="ATM Login">
+    </div>
+    <div class="grid-item">
+        <img src="{% static 'images/violet.png' %}" alt="Restaurant Dashboard"></a>
+    </div>  
+    <div class="grid-item">
+        <img src="{% static 'images/blue1.png' %}" alt="WelcomePage LMS"></a>
+    </div>
+</div>
+<h3>-Past Project's</h3>
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="{% static 'images/peso converter.png' %}" >
+    </div>
+    <div class="grid-item">
+        <img src="{% static 'images/Payroll.png' %}" alt="ATM Login">
+    </div>
+    <div class="grid-item">
+        <img src="{% static 'images/Welcome Page LMS.png' %}" alt="Restaurant Dashboard"></a>
+    </div>  
+    <div class="grid-item">
+        <img src="{% static 'images/Payroll Home.png' %}" alt="WelcomePage LMS"></a>
+    </div>
+</div>
+{% endblock content %}
